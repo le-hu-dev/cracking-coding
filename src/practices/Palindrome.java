@@ -6,16 +6,16 @@ public class Palindrome {
 
         String[] reveres = word.split("");
 
-        String s="";
+        String s = "";
 
-        for(int i=reveres.length-1; i>=0; i--) {
-            s+=reveres[i];
+        for (int i = reveres.length - 1; i >= 0; i--) {
+            s += reveres[i];
         }
 
-        if(word.equalsIgnoreCase(s)) {
+        if (word.equalsIgnoreCase(s)) {
             System.out.println(true);
             return true;
-        }else{
+        } else {
             System.out.println(false);
             return false;
         }
